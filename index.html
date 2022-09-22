@@ -30,31 +30,31 @@
                 </h2>
                 <button><a>Cadastre-se</a></button>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="containerImg">
+                <img src="src/img/banner.png" alt="">
             </div>
         </section>
         <section id="two" class="part">
             <h2>Como funciona</h2>
-            <div>
-                <div>
-                    <img>
+            <div id="howMake">
+                <div class="card">
+                    <img src="src/img/add-icon.png">
                     <p>Crie conexões</p>
                     <span>
                         Lorem ipsum dolor sit amet,
                         consecteteu.
                     </span>
                 </div>
-                <div>
-                    <img>
+                <div class="card">
+                    <img src="src/img/happy-icon.png">
                     <p>Compartilhamento</p>
                     <span>
                         Lorem ipsum dolor sit amet,
                         consecteteu.
                     </span>
                 </div>
-                <div>
-                    <img>
+                <div class="card">
+                    <img  src="src/img/security-icon.png">
                     <p>100% gratuito</p>
                     <span>
                         Lorem ipsum dolor sit amet,
@@ -64,33 +64,48 @@
             </div>
         </section>
         <section id="three" class="part">
-            <div>
+            <div class="textBox">
                 <h2>Baixe nosso app para desfrutar mais !</h2>
                 <p>
-                    Amet in elementum nulla scelerisque dui, egestas at. Elit
-                    consectetur turpis elementum amet vitae et etiam nec.
+                    Amet in elementum nulla scelerisque dui, egestas at. Elit<br>
+                    consectetur turpis elementum amet vitae et etiam nec.<br>
                     Varius volutpat hac adipiscing tincidunt pretium.
                 </p>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div id="app">
+                    <img src="src/img/play.png" alt="">
+                    <img src="src/img/app.png" alt="">
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="containerImg">
+                <img src="src/img/cellphone.png" alt="">
             </div>
         </section>
         <section id="four" class="part">
             <h2>Nossos Planos</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+            <p class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec <br>
                 lacinia mi quis euismod ultrices.
             </p>
-            <div>
-                <div>
-                    <title>Bronze</title>
-                    <p><span>R$</span>28 <span>/mês</span></p>
-                    <p>
+            <div id="containerCards">
+                <div class="card">
+                    <h2 class="cardTitle">Bronze</h2>
+                    <p class="price"><span class="currency">R$</span>28 <span class="mes">/mês</span></p>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Donec
+                        lacinia mi quis euismod ultrices.
+                    </p>
+
+                    <button>
+                        <a>Assinar</a>
+                    </button>
+                </div>
+                <!-- TODO:...-->
+                <div class="card" id="prefer">
+                    <h2 class="cardTitle">Prata</h2>
+                    <div id="preferTag">Preferido</div>
+                    <p class="price"><span class="currency">R$</span>57 <span class="mes">/mês</span></p>
+                    <p class="description">
                         Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit. Donec
                         lacinia mi quis euismod ultrices.
@@ -101,25 +116,10 @@
                     </button>
                 </div>
                 <!-- TODO:...-->
-                <div>
-                    <title>Prata</title>
-                    <div>Preferido</div>
-                    <p><span>R$</span>57 <span>/mês</span></p>
-                    <p>
-                        Lorem ipsum dolor sit amet, 
-                        consectetur adipiscing elit. Donec
-                        lacinia mi quis euismod ultrices.
-                    </p>
-
-                    <button>
-                        <a>Assinar</a>
-                    </button>
-                </div>
-                <!-- TODO:...-->
-                <div>
-                    <title>Bronze</title>
-                    <p><span>R$</span>94<span>/mês</span></p>
-                    <p>
+                <div class="card">
+                    <h2 class="cardTitle">Ouro</h2>
+                    <p class="price"><span class="currency">R$</span>94 <span class="mes">/mês</span></p>
+                    <p class="description">
                         Lorem ipsum dolor sit amet, 
                         consectetur adipiscing elit. Donec
                         lacinia mi quis euismod ultrices.
@@ -134,10 +134,10 @@
         <section id="five" class="part">
             <h2>Contato</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
                 Donec lacinia mi quis euismod ultrices.
             </p>
-            <div>
+            <div class="contactBox">
                 <input type="email" id="emailUser" name="email" placeholder="Seu melhor e-mail">
                 <button type="submit"><a>Eviar</a></button>
             </div>

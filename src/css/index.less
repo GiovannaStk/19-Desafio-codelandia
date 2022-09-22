@@ -23,6 +23,7 @@ main{
         border-radius: 50px;
         padding: 1em;
         
+        
         a{
             text-align: center;
             color: @white;
@@ -32,17 +33,25 @@ main{
         }
     }
 
+    .part{
+        padding: 1em 135px;
+    }
+
+    .textBox{
+        width: 50%;
+    }
+
     header{   
         padding: 0 135px;   
         nav{
-            height: 70px;
+            height: 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
           
 
             img{
-                width: 30px;
+                width: 100px;
                 height: 30px;
             }
 
@@ -60,7 +69,306 @@ main{
         }
     }
 
-    .one{
+    #one{       
+        height: 500px;
+        background-color: @white-400;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
+        .textBox{
+            h2{
+                color: @gray-200;
+                font-size: 40px;
+                font-weight: 600;
+                font-family: @sora;
+                padding-bottom: 1.5em;
+            }
+
+            button{
+                width: 160px;
+            }
+        }
+
+        .containerImg{
+            img{
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+    }
+
+    #two, #three{
+        height: 400px;
+    }
+
+    #two{
+       
+        h2{
+            color: @gray-200;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: @sora;
+            padding: 1.5em  0;
+            text-align: center;
+        }
+
+        #howMake{
+            display: flex;          
+            justify-content: space-around;
+            align-items: center;
+
+            .card{
+                display:flex;
+                flex-direction: column;               
+                align-items: center;
+                width: 210px;
+                text-align: center;
+
+                img{
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 1em;                    
+                }
+
+                p{
+                    color: @gray-200;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: @sora;
+                    padding-bottom: 1em;
+                }
+
+                span{
+                    color: @gray;
+                    font-family: @inter;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    #three{
+        background-color: @white-400;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .textBox{
+            h2{
+                color: @gray-200;
+                font-size: 40px;
+                font-weight: 600;
+                font-family: @sora;
+                padding: 1em  0;                       
+            }
+    
+            p{
+                color: @gray;
+                font-family: @inter;
+                font-weight: 400;
+                font-size: 16px;
+                text-align: left;
+            }
+    
+            #app{
+                display: flex;
+                gap:40px;
+                margin: 1.5em 0;
+                img{
+                    width: 150px;
+                    height: 50px;
+                    
+                }
+            }
+        }
+
+        .containerImg{
+            img{
+                height: 300px;
+                width: 300px;
+            }
+        }
+   
+    }
+
+    #four{
+        height: 600px;
+
+        h2{
+            color: @gray-200;
+            font-size: 30px;
+            font-weight: 600;
+            font-family: @sora;
+            padding: 0.5em  0;
+            text-align: center;
+        }
+
+        .subtitle{
+            color: @gray;
+            font-family: @inter;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #containerCards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 3em 0 ;
+
+            #prefer{
+                background-color: @gray-200;       
+                position: relative;        
+
+                .cardTitle{
+                    color: @white;
+                }
+
+                #preferTag{
+                    background-color: @blue;
+                    color: @white;
+                    border-radius: 15px;
+                    font-size: 10px;
+                    padding: 4px;
+                    width: 111px;
+                    height: 20px;
+                    font-family: @inter;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                    text-align: center;
+                    position: absolute;
+                    top: 80px;
+                }
+
+                .price{
+                    color: @white;
+                }
+            }
+
+            .card{
+                height: 360px;
+                width: 300px;
+                background-color: @white-400;
+                border-radius: 8px;
+                padding: 1em;            
+                transition: 1s;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .cardTitle{
+                    color: @gray-200;
+                    
+                    font-family: @sora;
+                    font-weight: 600;
+                    font-size: 25px;
+                    padding: 0;
+                }
+
+                .price{
+                    color: @gray-200;
+                    font-family: @inter;
+                    font-weight: bold;
+                    font-size: 30px;
+                    position: relative;
+                    .currency{
+                        font-size: 12px;
+                        position: relative;
+                        top:-10px;
+                    }
+
+                    .mes{
+                        font-size: 18px;
+                    }
+                }
+
+                .description{
+                    color: @gray;
+                    width: 258px;
+                    font-family: @inter;
+                    font-weight: 400;
+                    font-size: 15px;
+                    text-align: center;
+                }
+                button{
+                    width: 200px;
+                }
+            }
+
+            .card:hover{               
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    #five{
+        height: 300px;
+        background-color: @gray-200;
+        color: @white;
+        text-align: center;
+
+        h2{      
+            font-size: 30px;
+            font-weight: 600;
+            font-family: @sora;
+            padding: 0.5em  0;           
+        }
+
+        p{         
+            font-family: @inter;
+            font-weight: 400;
+            font-size: 16px;         
+        }
+
+        .contactBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 4em;
+
+            #emailUser{
+                border-bottom: 1px solid @white;
+                background-color: transparent;
+                color: @white;
+                padding-bottom: 0.5em;
+                width: 200px;
+                font-size: 16px;       
+                font-family: @inter;
+                font-weight: 400;     
+            }
+
+            #emailUser::-webkit-input-placeholder {
+                color: @white;
+            }
+
+            button{
+                width: 100px;
+                padding: 0.4em;
+
+                a{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    footer{
+        height: 70px;
+        padding: 1.5em 0;
+        p{
+            color: @gray-200;
+            font-size: 16px;
+            font-family:@sora;
+            font-weight: 400;
+            text-align: center;
+        }
     }
 }
