@@ -14,6 +14,8 @@
 @inter:'Inter';
 //*end
 
+//! Refatorar CSS
+
 main{
     width: 100%;
 
@@ -370,5 +372,148 @@ main{
             font-weight: 400;
             text-align: center;
         }
+    }
+
+
+    @media (max-width: 768px) {
+      
+        .part{
+            padding: 1em 20px;
+            height: auto !important;
+        }
+
+        .textBox{
+            width: 100%;
+        }
+
+        header{
+            padding: 0 20px;
+        }
+
+        #one{
+            justify-content: flex-start;
+
+            .textBox{               
+                h2{
+                    font-size: 25px;
+                    padding-bottom: 0.5em;
+                }
+            }
+            .containerImg{
+                display: none;
+            }
+        }
+
+        #two{
+
+            h2{
+                padding: 0.5em 0;
+                font-size: 25px;
+            }
+            #howMake{
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+        }
+
+        #three{
+
+            .textBox{
+               
+                h2{
+                    font-size: 25px;
+                    padding-bottom: 0.5em;
+                }
+
+                h2,p{
+                    text-align: center;
+                }
+
+                #app{
+                    justify-content: center;
+                }
+              
+            }
+
+            .containerImg{
+                display: none;
+            }
+        }
+
+        #four{           
+            h2{
+                font-size: 25px;
+            }
+            #containerCards{
+                flex-wrap: wrap;
+            }
+        }
+
+        #five{
+            h2{
+                font-size: 25px;
+            }
+        }
+        
+    }
+
+    @media (max-width: 425px) {
+        
+        button{
+            padding: 0.5em;
+        }
+
+        header{
+            nav{
+                ul{
+                    display: none;
+                }
+            }
+        }
+
+        #three{
+
+            .textBox{
+
+                p{
+                    font-size: 13px;
+                }
+
+                #app{
+                    gap: 0;
+                    img{
+                        width: 116px;
+                         height: 36px;
+                    }
+                }
+            }
+        }
+
+        #four{
+            .subtitle{
+                font-size: 13px;
+            }
+        }
+
+        #five{
+            p{
+                font-size: 13px;
+            }
+
+            .contactBox{
+                flex-direction: column;
+
+                input, button{
+                    width: 100% !important;
+                }
+            }
+        }
+
+        footer{
+            p{
+                font-size: 13px;
+            }
+        }
+        
     }
 }

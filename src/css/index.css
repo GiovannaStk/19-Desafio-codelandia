@@ -316,3 +316,90 @@ main footer p {
   font-weight: 400;
   text-align: center;
 }
+@media (max-width: 768px) {
+  main .part {
+    padding: 1em 20px;
+    height: auto !important;
+  }
+  main .textBox {
+    width: 100%;
+  }
+  main header {
+    padding: 0 20px;
+  }
+  main #one {
+    justify-content: flex-start;
+  }
+  main #one .textBox h2 {
+    font-size: 25px;
+    padding-bottom: 0.5em;
+  }
+  main #one .containerImg {
+    display: none;
+  }
+  main #two h2 {
+    padding: 0.5em 0;
+    font-size: 25px;
+  }
+  main #two #howMake {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  main #three .textBox h2 {
+    font-size: 25px;
+    padding-bottom: 0.5em;
+  }
+  main #three .textBox h2,
+  main #three .textBox p {
+    text-align: center;
+  }
+  main #three .textBox #app {
+    justify-content: center;
+  }
+  main #three .containerImg {
+    display: none;
+  }
+  main #four h2 {
+    font-size: 25px;
+  }
+  main #four #containerCards {
+    flex-wrap: wrap;
+  }
+  main #five h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 425px) {
+  main button {
+    padding: 0.5em;
+  }
+  main header nav ul {
+    display: none;
+  }
+  main #three .textBox p {
+    font-size: 13px;
+  }
+  main #three .textBox #app {
+    gap: 0;
+  }
+  main #three .textBox #app img {
+    width: 116px;
+    height: 36px;
+  }
+  main #four .subtitle {
+    font-size: 13px;
+  }
+  main #five p {
+    font-size: 13px;
+  }
+  main #five .contactBox {
+    flex-direction: column;
+  }
+  main #five .contactBox input,
+  main #five .contactBox button {
+    width: 100% !important;
+  }
+  main footer p {
+    font-size: 13px;
+  }
+}
